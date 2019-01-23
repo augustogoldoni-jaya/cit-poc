@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import themes from './StoreThemes'
-
-let ThemeContext = React.createContext('sicklecell');
+import {ThemeContext} from './theme-context';
 
 class SicklecellStore extends Component {
   render() {
+    let props = this.props;
+    let theme = this.context;
+
     return (
-      <div>
+      <div {...props} style={{fontSize: theme.fontSize, color: theme.color}}>
         <div>
           <h1>Hello World Sicklecell!</h1>
           <form>
@@ -19,5 +20,7 @@ class SicklecellStore extends Component {
     );
   }
 }
+
+SicklecellStore.contextType = ThemeContext;
 
 export default SicklecellStore;
