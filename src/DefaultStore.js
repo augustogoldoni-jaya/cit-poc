@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
 import {ThemeContext} from './DefaultContext';
+import styled from "styled-components"
+
+const Container = styled.div`
+  background-color: ${props => props.context.color};
+  font-size: ${props => props.context.fontSize};
+`
 
 class DefaultStore extends Component {
   render() {
-    let props = this.props;
-    let theme = this.context;
 
     return (
-      <div {...props} style={{fontSize: theme.fontSize, color: theme.color}}>
-        <div>
-          <h1>Hello World Sicklecell!</h1>
-          <form>
-            <input type="text" name="address"/>
-            <label>Address</label>
-            <input type="submit" />
-          </form>
+      <ThemeContext.Consumer>
+        {context => context && <div>
+          {context.fontSize}
+          <Container context={context}>
+            <h1>Hello World Sicklecell!</h1>
+            <form>
+              <input type="text" name="address"/>
+              <label>Address</label>
+              <input type="submit" />
+            </form>
+          </Container>
         </div>
-      </div>
+        }
+      </ThemeContext.Consumer>
     );
   }
 }
 
-DefaultStore.contextType = ThemeContext;
+
 
 export default DefaultStore;

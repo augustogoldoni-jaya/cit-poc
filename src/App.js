@@ -13,14 +13,13 @@ class App extends React.Component {
 
   render() {
     const { domain } = this.state;
-
+    console.log(StoresMap);
     const Config = StoresMap.find((x) =>  x.Domain === domain );
-    const actual = Config.Context;
     const Store = Config.Component;
 
     return (
       <div>
-        <ThemeContext.Provider value={actual}>
+        <ThemeContext.Provider value={Config.Context}>
             <Store/>
         </ThemeContext.Provider>
       </div>
