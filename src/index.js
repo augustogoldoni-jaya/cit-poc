@@ -1,22 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import WebmdApp from './WebmdApp';
-import SicklecellApp from './SicklecellApp';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-const domain = window.location.hostname;
-
-const App = ((domain) => {
-  switch (domain) {
-    case 'webmd.tech':
-      return WebmdApp;
-    case 'sicklecell.tech':
-      return SicklecellApp;
-    default:
-      return SicklecellApp;
-  }
-})(domain);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
