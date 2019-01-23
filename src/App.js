@@ -13,8 +13,10 @@ class App extends React.Component {
 
   render() {
     const { domain } = this.state;
-    const actual = StoresMap[domain].Context;
-    const Store = StoresMap[domain].Component;
+
+    const Config = StoresMap.find((x) =>  x.Domain === domain );
+    const actual = Config.Context;
+    const Store = Config.Component;
 
     return (
       <div>
