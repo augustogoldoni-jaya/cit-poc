@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ThemeContext} from './theme-context';
+import {ThemeContext} from './DefaultContext';
 
 class DefaultStore extends Component {
   render() {
