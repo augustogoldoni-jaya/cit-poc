@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const sicklecell = {
+export const DefaultContext = {
     fontSize: '11px',
     color: 'blue'
 };

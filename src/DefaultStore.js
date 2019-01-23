@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {ThemeContext} from './theme-context';
 
-class SicklecellStore extends Component {
+class DefaultStore extends Component {
   render() {
     let props = this.props;
     let theme = this.context;
@@ -21,6 +21,6 @@ class SicklecellStore extends Component {
   }
 }
 
-SicklecellStore.contextType = ThemeContext;
+DefaultStore.contextType = ThemeContext;
 
-export default SicklecellStore;
+export default DefaultStore;
