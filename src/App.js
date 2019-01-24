@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemeContext } from './default/DefaultContext';
 import { StoresMap } from './StoresMap'
 
 class App extends React.Component {
@@ -13,14 +12,14 @@ class App extends React.Component {
 
   render() {
     const { domain } = this.state;
-    console.log(StoresMap);
     const Config = StoresMap.find((x) =>  x.Domain === domain );
     const Store = Config.Component;
+    const ThemeContext = Config.ThemeContext;
 
     return (
       <div>
         <ThemeContext.Provider value={Config.Context}>
-          <Store/>
+          <Store config={Config}/>
         </ThemeContext.Provider>
       </div>
     )

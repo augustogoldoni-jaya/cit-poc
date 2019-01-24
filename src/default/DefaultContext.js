@@ -5,6 +5,6 @@ export const DefaultContext = {
   color: 'blue'
 };
 
-export const ThemeContext = React.createContext(
+export const DefaultThemeContext = React.createContext(
   DefaultContext
 );

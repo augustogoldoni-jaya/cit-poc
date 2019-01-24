@@ -1,10 +1,10 @@
 import React from 'react';
 
 export const WebmdContext = {
-  fontSize: '15px',
+  fontSize: '10px',
   color: 'grey'
 };
 
-export const ThemeContext = React.createContext(
+export const WebmdThemeContext = React.createContext(
   WebmdContext
 );

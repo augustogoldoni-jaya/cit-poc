@@ -5,6 +5,6 @@ export const OtherContext = {
   color: 'yellow'
 };
 
-export const ThemeContext = React.createContext(
+export const OtherThemeContext = React.createContext(
   OtherContext
 );
