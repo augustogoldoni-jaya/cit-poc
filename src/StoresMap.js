@@ -1,8 +1,8 @@
-import { DefaultContext } from './DefaultContext'
-import WebmdStore from './WebmdStore';
-import DefaultStore from './DefaultStore';
-import { WebmdContext } from './WebmdContext'
-import { OtherContext} from './OtherContext'
+import { DefaultContext } from './default/DefaultContext'
+import WebmdStore from './webmd/WebmdStore';
+import DefaultStore from './default/DefaultStore';
+import { WebmdContext } from './webmd/WebmdContext'
+import { OtherContext} from './other/OtherContext'
 
 export const StoresMap = [
   {
