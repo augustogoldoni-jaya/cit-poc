@@ -15,7 +15,7 @@ class DefaultStore extends Component {
         {context => context && <div>
           {context.fontSize}
           <Container context={context}>
-            <h1>Hello World Sicklecell!</h1>
+            <h1>Hello World Default!</h1>
             <form>
               <input type="text" name="address"/>
               <label>Address</label>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {ThemeContext} from './DefaultContext';
-import {StoresMap} from './Store'
+import {StoresMap} from './StoresMap'
 
 class App extends React.Component {
   constructor(props) {
