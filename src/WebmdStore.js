@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ThemeContext} from './WebmdContext';
+import { ThemeContext } from './WebmdContext';
 
 class WebmdStore extends Component {
   render() {

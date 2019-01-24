@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ThemeContext} from './DefaultContext';
+import { ThemeContext } from './DefaultContext';
 import styled from "styled-components"
 
 const Container = styled.div`

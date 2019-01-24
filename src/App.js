@@ -1,6 +1,6 @@
 import React from 'react';
-import {ThemeContext} from './DefaultContext';
-import {StoresMap} from './StoresMap'
+import { ThemeContext } from './DefaultContext';
+import { StoresMap } from './StoresMap'
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div>
         <ThemeContext.Provider value={Config.Context}>
-            <Store/>
+          <Store/>
         </ThemeContext.Provider>
       </div>
     )
